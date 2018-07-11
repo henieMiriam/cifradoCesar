@@ -1,0 +1,19 @@
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-image: url(https://coubsecure-s.akamaihd.net/get/b132/p/coub/simple/cw_timeline_pic/0338252a3ea/1800ecc4f35b272906549/big_1485371584_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+label,h1{
+  color: white;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 400;
+}
+.btn{
+  width: 45%;
+  height: 5vh;
+  margin-top: 7px;
+}
