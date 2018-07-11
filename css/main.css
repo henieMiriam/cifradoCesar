@@ -17,3 +17,7 @@ label,h1{
   height: 5vh;
   margin-top: 7px;
 }
+.image-inicio>img{
+  width: 100%;
+  height: 150vh;
+}
