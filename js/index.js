@@ -21,10 +21,16 @@ btnCipher.onclick=function(){
   for (var i = 0; i < cipherText.value.length; i++) {
     //var ascii = cipherText.charCodeAt(i);
     console.log(cipherText.value);
+    cipherText.value="";
   }
 };
 btnDecipher.onclick=function(){
-  console.log("hello");
+  //console.log("hello");
+  for (var i = 0; i < cipherText.value.length; i++) {
+    //var ascii = cipherText.charCodeAt(i);
+    console.log(cipherText.value);
+    cipherText.value="";
+  }
 };
 
 
