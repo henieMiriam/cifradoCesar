@@ -5,9 +5,23 @@ var cipherText= document.getElementById("text-to-convert");
 
 //console.log("hola");
 
-//function verifyMyText=
+var verifyMyText= function(){
+  if (cipherText.value ==="" || cipherText.value >= 65 && ascii <= 90 || cipherText.value >= 97 && ascii <= 122)
+ {
+    console.log("whatttt!!!");
+  }else{
+    console.log("super!!");
+  }
+}
+verifyMyText(cipherText.value);
+
+
 btnCipher.onclick=function(){
-  console.log("hola");
+  //console.log("hola");
+  for (var i = 0; i < cipherText.value.length; i++) {
+    //var ascii = cipherText.charCodeAt(i);
+    console.log(cipherText.value);
+  }
 };
 btnDecipher.onclick=function(){
   console.log("hello");
