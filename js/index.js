@@ -1,9 +1,16 @@
 //console.log("hola");
-document.getElementById("cipher").onclick=function(){
-  console.log("hla");
+var btnCipher= document.getElementById("cipher");
+var btnDecipher= document.getElementById("decipher");
+var cipherText= document.getElementById("text-to-convert");
+
+//console.log("hola");
+
+//function verifyMyText=
+btnCipher.onclick=function(){
+  console.log("hola");
 };
-document.getElementById("decipher").onclick=function(){
-  console.log("hlbacjaca");
+btnDecipher.onclick=function(){
+  console.log("hello");
 };
 
 
@@ -13,9 +20,3 @@ $(document).ready(function(){
   $("main.image-inicio").fadeOut(500);
 
   });
-
-/*  document.getElementById("demo").onclick = function() {myFunction()};
-
-  function myFunction() {
-      document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-  }*/
