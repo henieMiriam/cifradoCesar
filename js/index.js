@@ -1,12 +1,21 @@
 //console.log("hola");
-var btnCipher= document.getElementById("cipher");
-var btnDecipher= document.getElementById("decipher");
-var cipherText=document.getElementById("text-to-convert");
+document.getElementById("cipher").onclick=function(){
+  console.log("hla");
+};
+document.getElementById("decipher").onclick=function(){
+  console.log("hlbacjaca");
+};
 
 
 
 $(document).ready(function(){
 /*  $( window ).on( "load")*/
-  $(".image-inicio").fadeOut(1500);
+  $("main.image-inicio").fadeOut(500);
 
   });
+
+/*  document.getElementById("demo").onclick = function() {myFunction()};
+
+  function myFunction() {
+      document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+  }*/
