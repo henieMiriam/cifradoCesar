@@ -1,37 +1,43 @@
-//console.log("hola");
+//se crean variables globales
 var btnCipher= document.getElementById("cipher");
 var btnDecipher= document.getElementById("decipher");
 var cipherText= document.getElementById("text-to-convert");
 
-//console.log("hola");
-
+//verificando que se ingrese data
 var verifyMyText= function(){
-  if (cipherText.value ==="" || cipherText.value >= 65 && ascii <= 90 || cipherText.value >= 97 && ascii <= 122)
+  if (cipherText.value ==="")
  {
-    console.log("whatttt!!!");
+    //console.log("whatttt!!!");
   }else{
-    console.log("super!!");
-  }
+    return cipherText.value;
+    }
 }
-verifyMyText(cipherText.value);
-
-
+//agregando evento al boton
 btnCipher.onclick=function(){
   //console.log("hola");
-  for (var i = 0; i < cipherText.value.length; i++) {
-    //var ascii = cipherText.charCodeAt(i);
-    console.log(cipherText.value);
+    if (verifyMyText(cipherText.value)=== true) {
+    }
+      var ascii= document.getElementById("text-to-convert").value;
+      for (var i = 0; i < ascii.length; i++) {
+        console.log(ascii[i]);
+      }
+
+    //console.log(verifyMyText());
     cipherText.value="";
-  }
 };
 btnDecipher.onclick=function(){
   //console.log("hello");
-  for (var i = 0; i < cipherText.value.length; i++) {
-    //var ascii = cipherText.charCodeAt(i);
-    console.log(cipherText.value);
-    cipherText.value="";
+  if (verifyMyText()=== true) {
   }
+  var newAscii= document.getElementById("text-to-convert").value;
+  for (var i = 0; i < newAscii.length; i++) {
+    console.log(newAscii[i]);
+  }
+  //console.log(verifyMyText());
+  cipherText.value="";
+
 };
+
 
 
 
