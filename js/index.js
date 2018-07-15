@@ -14,37 +14,44 @@ var verifyMyText= function(){
 }
 //agregando evento al boton
 btnCipher.onclick=function(){
-  //console.log("hola");
     if (verifyMyText(cipherText.value)=== true) {
     }
       var ascii= document.getElementById("text-to-convert").value;
       for (var i = 0; i < ascii.length; i++) {
-        console.log(ascii.charCodeAt([i]));
+        if (ascii.charCodeAt([i])>= 65 && ascii.charCodeAt([i])<= 90) {
+            var doCipher= (ascii.charCodeAt(i)-65+33)%26+65;
+            var reCipher=String.fromCharCode(doCipher);
+            console.log(reCipher);
+        }else if ( ascii.charCodeAt([i])>=97 && ascii.charCodeAt([i])<= 122) {
+          var doCiphers= (ascii.charCodeAt(i)-65+33)%26+65;
+          var reCiphers=String.fromCharCode(doCiphers);
+          console.log(reCiphers);
+        }else{
+          alert("sorry... este no es un texto valido; no debe contener numeros o caracteres especiales,intenta de nuevo ");
+        }
 
       }
-
-    //console.log(verifyMyText());
-    cipherText.value="";
+      cipherText.value="";
 };
 btnDecipher.onclick=function(){
-  //console.log("hello");
-  if (verifyMyText()=== true) {
+  if (verifyMyText()=== true ) {
   }
   var newAscii= document.getElementById("text-to-convert").value;
   for (var i = 0; i < newAscii.length; i++) {
-    console.log(newAscii.charCodeAt([i]));
 
-    if (newAscii.charCodeAt([i])>= 65 && newAscii.charCodeAt([i])<= 90) {
-      //var coding= i- 65 + 33) % 26 + 65;
-        console.log("hi");
+    if (newAscii.charCodeAt([i])>=65 && newAscii.charCodeAt([i])<= 90) {
+        var newCipher= (newAscii.charCodeAt(i)+65-33)%26+65;
+        var newDecipher=String.fromCharCode(newCipher);
+        console.log(newDecipher);
     }else if ( newAscii.charCodeAt([i])>=97 && newAscii.charCodeAt([i])<= 122) {
-      console.log("super");
+      var newCiphers= (newAscii.charCodeAt(i)+65-33)%26+65;
+      var newDeciphers=String.fromCharCode(newCiphers);
+      console.log(newDeciphers);
     }else{
-      console.log("sorry");
+      alert("sorry... este no es un texto valido; no debe contener numeros o caracteres especiales,intenta de nuevo ");
     }
 
   }
-  //console.log(verifyMyText());
   cipherText.value="";
 
 };
