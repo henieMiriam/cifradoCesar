@@ -7,7 +7,7 @@ var cipherText= document.getElementById("text-to-convert");
 var verifyMyText= function(){
   if (cipherText.value ==="")
  {
-    //console.log("whatttt!!!");
+    alert("Por favor introcude texto valido");
   }else{
     return cipherText.value;
     }
@@ -19,7 +19,8 @@ btnCipher.onclick=function(){
     }
       var ascii= document.getElementById("text-to-convert").value;
       for (var i = 0; i < ascii.length; i++) {
-        console.log(ascii[i]);
+        console.log(ascii.charCodeAt([i]));
+
       }
 
     //console.log(verifyMyText());
@@ -31,7 +32,8 @@ btnDecipher.onclick=function(){
   }
   var newAscii= document.getElementById("text-to-convert").value;
   for (var i = 0; i < newAscii.length; i++) {
-    console.log(newAscii[i]);
+    console.log(newAscii.charCodeAt([i]));
+
   }
   //console.log(verifyMyText());
   cipherText.value="";
