@@ -34,6 +34,15 @@ btnDecipher.onclick=function(){
   for (var i = 0; i < newAscii.length; i++) {
     console.log(newAscii.charCodeAt([i]));
 
+    if (newAscii.charCodeAt([i])>= 65 && newAscii.charCodeAt([i])<= 90) {
+      //var coding= i- 65 + 33) % 26 + 65;
+        console.log("hi");
+    }else if ( newAscii.charCodeAt([i])>=97 && newAscii.charCodeAt([i])<= 122) {
+      console.log("super");
+    }else{
+      console.log("sorry");
+    }
+
   }
   //console.log(verifyMyText());
   cipherText.value="";
